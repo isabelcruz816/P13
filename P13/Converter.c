@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include "Converter.h"
-
 /*
     asciiBinaryToInt
     Converts a binary string to int
@@ -99,6 +98,7 @@ int asciiHEXToInt(char *s) {
 */
 double asciiToDouble(char *s) {
     double res = 0.0;
+
     char *pos = strchr(s, '.');
     int posIndex = pos - s;
     double base = pow(10, posIndex - 1);
